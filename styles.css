@@ -1,0 +1,130 @@
+.div_wrapper{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    gap: 10px;
+}
+
+div{
+    border-radius:  50px;
+}
+
+.img_perro{
+    display: none;
+}
+
+.red{
+    background-color: red;
+    width: 100%;
+    height: 33.33%;
+    display: block;
+}
+
+
+.violet{
+    background-color: violet;
+    width: 100%;
+    height: 33.33%;
+    display: block;
+}
+
+.black{
+    background-color: black;
+    width: 100%;
+    height: 33.33%;
+    display: block;
+}
+
+.green{
+    background-color: green;
+    width: 100%;
+    display: none;
+}
+
+
+
+
+@media screen and (min-width: 480px){
+    .div_wrapper {
+        flex-direction: column;
+    }
+
+    .red {
+        height: 50%;
+    }
+
+    .violet {
+        display: none;
+    }
+
+    .black{
+        display: none;
+    }
+
+    .green{
+        background-color: green;
+        height: 50%;
+        display: block;
+    }
+}
+
+
+@media screen and (min-width: 640px){
+    .div_wrapper {
+        flex-direction: row-reverse;
+    }
+
+    .red {
+        width: 50%;
+        height: 100%;
+    }
+    .violet {
+        width: 50%;
+        height: 100%;
+        display: block;
+    }
+
+    .black {
+        width: 50%;
+        height: 100%;
+        display: block;
+    }
+
+    .green{
+        width: 50%;
+        height: 100%;
+    }
+}
+
+@media screen and (min-width: 748px){
+    .div_wrapper {
+        flex-direction: column;
+    }
+
+    .red {
+        width: 100%;
+        height: 25%;
+    }
+    .violet {
+        width: 100%;
+        height: 25%;
+    }
+
+    .black {
+        display: none;
+    }
+
+    .green{
+        display: none;
+    }
+
+    .img_perro{
+        display: block;
+        height: 50%;
+        object-fit: cover;
+        border-radius: 50px;
+    }
+
+}
